@@ -30,7 +30,7 @@ function paintToDo(newTodo) {
   toDoList.appendChild(li);
 }
 
-function handleToDo(event) {
+function handleToDoForm(event) {
   event.preventDefault();
   const newTodo = toDoInput.value;
   toDoInput.value = "";
@@ -43,7 +43,7 @@ function handleToDo(event) {
   saveToDo();
 }
 
-toDoForm.addEventListener("submit", handleToDo);
+toDoForm.addEventListener("submit", handleToDoForm);
 
 const savedToDo = localStorage.getItem(TODOS_KEY);
 
