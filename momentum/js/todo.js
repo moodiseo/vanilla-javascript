@@ -30,20 +30,20 @@ function paintToDo(newTodo) {
   toDoList.appendChild(li);
 }
 
-function handleToDo(event) {
+function toDoSubmit(event) {
   event.preventDefault();
   const newTodo = toDoInput.value;
   toDoInput.value = "";
-  const newTodoObj = {
+  const newToDoObj = {
     text: newTodo,
     id: Date.now(),
   };
-  paintToDo(newTodoObj);
-  toDos.push(newTodoObj);
+  paintToDo(newToDoObj);
+  toDos.push(newToDoObj);
   saveToDo();
 }
 
-toDoForm.addEventListener("submit", handleToDo);
+toDoForm.addEventListener("submit", toDoSubmit);
 
 const savedToDo = localStorage.getItem(TODOS_KEY);
 
