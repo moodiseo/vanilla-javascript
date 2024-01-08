@@ -34,19 +34,18 @@ function toDoSubmit(event) {
   event.preventDefault();
   const newTodo = toDoInput.value;
   toDoInput.value = "";
-  const newToDoObj = {
+  const newTodoObj = {
     text: newTodo,
     id: Date.now(),
   };
-  paintToDo(newToDoObj);
-  toDos.push(newToDoObj);
+  paintToDo(newTodoObj);
+  toDos.push(newTodoObj);
   saveToDo();
 }
 
 toDoForm.addEventListener("submit", toDoSubmit);
 
 const savedToDo = localStorage.getItem(TODOS_KEY);
-
 if (savedToDo !== null) {
   const parsedToDo = JSON.parse(savedToDo);
   toDos = parsedToDo;
