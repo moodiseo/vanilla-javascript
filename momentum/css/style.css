@@ -1,6 +1,3 @@
-.hidden {
-  display: none;
-}
-#clock {
-  color: teal;
+body {
+  background-color: beige;
 }
