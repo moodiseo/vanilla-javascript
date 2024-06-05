@@ -1,3 +1,3 @@
-# Vanilla JavaScript 2024.05 Recap.
+# Vanilla JavaScript 2024.06 Recap.
 
 JavaScript is so much fun..
