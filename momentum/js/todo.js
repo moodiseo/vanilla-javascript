@@ -16,7 +16,6 @@ function deleteToDo(event) {
   toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
   saveToDo();
 }
-
 function paintToDo(newTodo) {
   const li = document.createElement("li");
   li.id = newTodo.id;
