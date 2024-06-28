@@ -16,6 +16,7 @@ function deleteToDo(event) {
   toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
   saveToDo();
 }
+
 function paintToDo(newTodo) {
   const li = document.createElement("li");
   li.id = newTodo.id;
@@ -45,9 +46,8 @@ function toDoSubmit(event) {
 toDoForm.addEventListener("submit", toDoSubmit);
 
 const savedToDo = localStorage.getItem(TODOS_KEY);
-
 if (savedToDo !== null) {
-  const parsedToDo = JSON.parse(savedToDo);
-  toDos = parsedToDo;
-  parsedToDo.forEach(paintToDo);
+  const parsedTodo = JSON.parse(savedToDo);
+  toDos = parsedTodo;
+  parsedTodo.forEach(paintToDo);
 }
