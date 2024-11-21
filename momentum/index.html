@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="kr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
     <title>Momentum App</title>
+    <link rel="stylesheet" href="/momentum/css/style.css" />
   </head>
   <body>
     <h3 id="clock"></h3>
@@ -15,15 +15,19 @@
     <form id="login-form" class="hidden">
       <input
         type="text"
-        required
         placeholder="What is your name?"
+        required
         maxlength="15"
       />
       <input type="submit" value="LogIn" />
     </form>
     <h2 id="greeting" class="hidden"></h2>
     <form id="todo-form">
-      <input type="text" placeholder="Write a To Do and Press Enter" />
+      <input
+        type="text"
+        placeholder="Write a To Do and Press Enter."
+        required
+      />
     </form>
     <ul id="todo-list"></ul>
     <div id="quote">

@@ -38,8 +38,8 @@ function toDoSubmit(event) {
     text: newTodo,
     id: Date.now(),
   };
-  toDos.push(newTodoObj);
   paintToDo(newTodoObj);
+  toDos.push(newTodoObj);
   saveToDo();
 }
 
