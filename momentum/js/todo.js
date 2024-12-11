@@ -34,12 +34,12 @@ function toDoSubmit(event) {
   event.preventDefault();
   const newTodo = toDoInput.value;
   toDoInput.value = "";
-  const newTodoObj = {
+  const newToDoObj = {
     text: newTodo,
     id: Date.now(),
   };
-  paintToDo(newTodoObj);
-  toDos.push(newTodoObj);
+  paintToDo(newToDoObj);
+  toDos.push(newToDoObj);
   saveToDo();
 }
 
